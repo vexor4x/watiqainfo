@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vexor4x.github.io/watiqainfo/sitemap.xml
