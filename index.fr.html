@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>WatiqaInfo — Documents administratifs au Maroc (Guides clairs)</title>
+  <meta name="description" content="WatiqaInfo : guides clairs pour les documents administratifs au Maroc. Choisissez votre document, suivez les étapes, évitez les erreurs et consultez les sources officielles." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Canonical (absolute is better for sharing/indexing) -->
+  <link rel="canonical" href="https://vexor4x.github.io/watiqainfo/index.fr.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/watiqainfo/css/style.css" />
+
+  <link rel="alternate" hreflang="ar" href="https://vexor4x.github.io/watiqainfo/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://vexor4x.github.io/watiqainfo/index.fr.html" />
+
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WatiqaInfo — Documents administratifs au Maroc (Guides clairs)" />
+  <meta property="og:description" content="Choisissez votre document, préparez les pièces, suivez les étapes et évitez les erreurs — avec des sources officielles." />
+  <meta property="og:url" content="https://vexor4x.github.io/watiqainfo/index.fr.html" />
+
+  <!-- Structured Data: ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Documents administratifs — WatiqaInfo",
+    "inLanguage":"fr",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"CNIE (Carte Nationale d’Identité Électronique)",
+        "url":"https://vexor4x.github.io/watiqainfo/procedures/carte-nationale/fr/index.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .skip-link{
+      position:absolute;
+      inset-inline-start:12px;
+      inset-block-start:12px;
+      padding:10px 12px;
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:12px;
+      box-shadow:var(--shadow);
+      transform:translateY(-200%);
+      transition:transform 120ms ease;
+      z-index:1000;
+      color:var(--text);
+      font-weight:800;
+    }
+    .skip-link:focus{ transform:translateY(0); }
+
+    .note{
+      margin:0;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(74,163,255,0.10);
+      color:var(--muted);
+    }
+    html[data-theme="light"] .note{ background:rgba(74,163,255,0.08); }
+
+    .home-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-block-start: 14px;
+    }
+
+    .btn-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border:1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.04);
+      box-shadow: var(--shadow);
+      font-weight: 900;
+      color: var(--text);
+      transition: transform 120ms ease, border-color 120ms ease;
+      text-decoration:none;
+    }
+    html[data-theme="light"] .btn-link{ background:#ffffff; }
+    .btn-link:hover{ transform: translateY(-1px); border-color: rgba(74,163,255,0.45); }
+    .btn-link:focus-visible{ outline: 3px solid rgba(74,163,255,0.65); outline-offset: 2px; }
+
+    .search{
+      margin-block-start: 12px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .search input{
+      flex: 1 1 220px;
+      min-inline-size: 220px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(16,24,38,0.45);
+      color: var(--text);
+      box-shadow: var(--shadow);
+    }
+    html[data-theme="light"] .search input{ background:#ffffff; }
+    .search input::placeholder{ color: var(--muted); }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-block-start: 14px;
+    }
+    @media (min-width: 780px){
+      .grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .doc-card{
+      display:block;
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      background: rgba(16,24,38,0.45);
+      box-shadow: var(--shadow);
+      transition: transform 120ms ease, border-color 120ms ease;
+      text-decoration:none;
+    }
+    html[data-theme="light"] .doc-card{ background:#ffffff; }
+    .doc-card:hover{ transform: translateY(-1px); border-color: rgba(74,163,255,0.45); }
+
+    .doc-title{
+      margin:0;
+      font-weight: 900;
+      color: var(--text);
+      font-size: 1.05rem;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border:1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-weight: 900;
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      flex: 0 0 auto;
+    }
+    html[data-theme="light"] .tag{ background: rgba(0,0,0,0.03); }
+
+    .doc-desc{
+      margin:10px 0 0;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .muted-links a{
+      color: var(--accent-2);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 900;
+    }
+    .muted-links a:hover{ color: var(--accent); }
+
+    /* Accessible visually-hidden text (keep for screen readers) */
+    .sr-only{
+      position:absolute;
+      inline-size:1px;
+      block-size:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+
+    /* Disable "bientôt" cards safely */
+    .doc-card.is-disabled{
+      opacity:0.65;
+      cursor:not-allowed;
+      pointer-events:none;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+
+  <div id="site-header"></div>
+
+  <main class="container" id="content">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">WatiqaInfo — Guides clairs, sans stress</h1>
+      <p style="margin:0; color: var(--muted);">
+        Ici, vous trouverez des explications simples pour les démarches administratives au Maroc :
+        quoi préparer, quelles étapes suivre, les erreurs à éviter, et où vérifier l’information officiellement.
+      </p>
+
+      <div class="note" style="margin-block-start: 14px;">
+        <strong style="color: var(--text);">Notre promesse :</strong>
+        <span style="color: var(--muted);">
+          un guide calme, clair, et orienté “solution” — sans vous noyer dans les détails inutiles.
+        </span>
+      </div>
+
+      <div class="home-actions" aria-label="Actions rapides">
+        <a class="btn-link" href="#documents" aria-label="Voir les documents disponibles">
+          📄 Voir les documents
+        </a>
+        <a class="btn-link" href="#sources" aria-label="Aller aux sources officielles">
+          ✅ Sources officielles
+        </a>
+        <a class="btn-link" href="/watiqainfo/procedures/carte-nationale/fr/index.html" aria-label="Accéder directement à la CNIE">
+          🪪 CNIE (Carte d’identité)
+        </a>
+      </div>
+
+      <div class="search" role="search" aria-label="Rechercher un document (filtrage local)">
+        <label for="docSearch" class="sr-only">Rechercher un document</label>
+        <input id="docSearch" type="search" placeholder="Rechercher : CNIE, passeport, casier judiciaire, résidence…" autocomplete="off" />
+        <span style="color: var(--muted); font-weight: 800;">Filtre local (dans cette page)</span>
+      </div>
+    </section>
+
+    <!-- DOCUMENTS -->
+    <section class="card" id="documents" aria-labelledby="documents-title" style="margin-block-start: 18px;">
+      <h2 id="documents-title">Documents (choisissez votre rubrique)</h2>
+      <p style="margin:0; color: var(--muted);">
+        Cliquez sur un document, puis choisissez votre cas (première demande, renouvellement, perte/vol, etc.).
+      </p>
+
+      <div class="grid" id="docGrid" role="list" aria-label="Liste des documents">
+        <!-- CNIE -->
+        <a class="doc-card" role="listitem"
+           data-keys="cnie carte nationale identite electronique carte d'identite maroc dgsn"
+           href="/watiqainfo/procedures/carte-nationale/fr/index.html"
+           aria-label="CNIE (Carte Nationale d’Identité Électronique)">
+          <h3 class="doc-title"><span class="tag" aria-hidden="true">🪪</span> CNIE (Carte Nationale d’Identité Électronique)</h3>
+          <p class="doc-desc">
+            Première demande, renouvellement, changement d’adresse, perte/vol/détérioration, rectification des informations.
+            Guides étape par étape + erreurs à éviter + sources officielles.
+          </p>
+        </a>
+
+        <!-- Placeholders (bientôt) -->
+        <a class="doc-card is-disabled" role="listitem" data-keys="passeport maroc" href="#documents" aria-disabled="true" tabindex="-1">
+          <h3 class="doc-title"><span class="tag" aria-hidden="true">🛂</span> Passeport (bientôt)</h3>
+          <p class="doc-desc">
+            Cette rubrique sera ajoutée après la vérification complète des liens et de la navigation du site.
+          </p>
+        </a>
+
+        <a class="doc-card is-disabled" role="listitem" data-keys="casier judiciaire bulletin n3 maroc" href="#documents" aria-disabled="true" tabindex="-1">
+          <h3 class="doc-title"><span class="tag" aria-hidden="true">📜</span> Casier judiciaire (bientôt)</h3>
+          <p class="doc-desc">
+            Guides clairs + pièces + étapes + sources. Ajout après validation finale de la structure actuelle.
+          </p>
+        </a>
+
+        <a class="doc-card is-disabled" role="listitem" data-keys="attestation residence certificat residence maroc" href="#documents" aria-disabled="true" tabindex="-1">
+          <h3 class="doc-title"><span class="tag" aria-hidden="true">🏠</span> Attestation de résidence (bientôt)</h3>
+          <p class="doc-desc">
+            Rubrique prévue. On avance de manière contrôlée : document par document.
+          </p>
+        </a>
+      </div>
+
+      <p class="note" style="margin-block-start: 14px; margin-block-end: 0;">
+        <strong style="color: var(--text);">Méthode de travail :</strong>
+        <span style="color: var(--muted);">
+          on avance étape par étape : on termine un ensemble, on vérifie les liens et l’expérience, puis on passe au document suivant.
+        </span>
+      </p>
+    </section>
+
+    <!-- GUIDE -->
+    <section class="card" aria-labelledby="how-title" style="margin-block-start: 18px;">
+      <h2 id="how-title">Comment utiliser le site (en 30 secondes)</h2>
+
+      <ol style="margin:0; padding-inline-start:1.2rem; color: var(--muted);">
+        <li><strong style="color: var(--text);">Choisissez le document</strong> (ex. CNIE).</li>
+        <li><strong style="color: var(--text);">Choisissez votre cas</strong> (première demande, renouvellement, etc.).</li>
+        <li><strong style="color: var(--text);">Préparez les pièces</strong> et suivez les étapes.</li>
+        <li><strong style="color: var(--text);">Vérifiez si nécessaire</strong> via la source officielle en bas de la page.</li>
+      </ol>
+
+      <p class="note" style="margin-block-start: 14px; margin-block-end: 0;">
+        <strong style="color: var(--text);">Important :</strong>
+        <span style="color: var(--muted);">
+          Les modalités peuvent varier selon la ville/centre. Les pages incluent toujours des sources officielles pour confirmer.
+        </span>
+      </p>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="card" id="sources" aria-labelledby="sources-title" style="margin-block-start: 18px;">
+      <h2 id="sources-title">Sources officielles (références)</h2>
+      <p style="margin:0; color: var(--muted);">
+        Ces liens servent à vérifier les informations sensibles (rendez-vous, suivi, modalités qui changent selon la ville) :
+      </p>
+
+      <ul class="muted-links" style="margin-block-start: 12px; color: var(--muted);">
+        <li>
+          Portail officiel CNIE :
+          <a href="https://www.cnie.ma/" target="_blank" rel="noopener noreferrer">cnie.ma</a>
+        </li>
+        <li>
+          Suivi / accès à la demande CNIE :
+          <a href="https://cnie.ma/request-select-type" target="_blank" rel="noopener noreferrer">Suivi de la demande</a>
+        </li>
+        <li>
+          Direction Générale de la Sûreté Nationale :
+          <a href="https://www.dgsn.gov.ma/" target="_blank" rel="noopener noreferrer">dgsn.gov.ma</a>
+        </li>
+      </ul>
+
+      <p class="note" style="margin-block-start: 12px; margin-block-end: 0;">
+        <strong style="color: var(--text);">Note :</strong>
+        <span style="color: var(--muted);">
+          On ajoute les autres sources officielles (selon chaque document) au fur et à mesure, après validation de la navigation.
+        </span>
+      </p>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- Small local filter (no dependency, safe if JS disabled) -->
+  <script>
+    (function () {
+      var input = document.getElementById('docSearch');
+      var grid = document.getElementById('docGrid');
+      if (!input || !grid) return;
+
+      function normalize(s) {
+        return (s || '').toLowerCase().trim();
+      }
+
+      input.addEventListener('input', function () {
+        var q = normalize(input.value);
+        var items = grid.querySelectorAll('[data-keys]');
+        items.forEach(function (el) {
+          var keys = normalize(el.getAttribute('data-keys'));
+          var text = normalize(el.textContent);
+          var ok = !q || keys.indexOf(q) !== -1 || text.indexOf(q) !== -1;
+          el.style.display = ok ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+
+  <script src="/watiqainfo/js/main.js" defer></script>
+</body>
+</html>
