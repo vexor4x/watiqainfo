@@ -174,7 +174,7 @@
 
     // Home pages in your project
     const homeHref = lang === "ar" ? withBase("/index.html") : withBase("/index.fr.html");
-    const aboutHref = withBase("/about-us.html");
+    const aboutHref = withBase("/about.html");
 
     const langSwitchHref = computeLangSwitchHref();
     const langLabel = lang === "ar" ? "FR" : "AR";
@@ -210,9 +210,9 @@
     const lang = detectLangFromPath();
     const year = new Date().getFullYear();
 
-    const aboutHref = withBase("/about-us.html");
+    const aboutHref = withBase("/about.html");
     const privacyHref = withBase("/privacy.html");
-    const disclaimerHref = withBase("/disclaimer.html");
+    const disclaimerHref = withBase("/terms.html");
 
     const note =
       lang === "ar"
